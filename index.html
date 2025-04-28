@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal™ Caribbean™ Helpline✨</title>
+    <style>
+        /* Resetting margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        /* Header styling */
+        header {
+            width: 100%;
+            background-color: #2e3a87;
+            padding: 20px 0;
+            color: white;
+            text-align: center;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Image section */
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            background-image: url('https://i.ibb.co/7d62K4DV/royal3.jpg');
+            background-position: center;
+            background-size: cover;
+            border-bottom: 5px solid #2e3a87;
+            animation: zoomIn 3s ease-in-out;
+        }
+
+        /* Main container for content */
+        .content-container {
+            width: 80%;
+            max-width: 1000px;
+            margin-top: 30px;
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        .content-container h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content-container p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .highlight {
+            color: #2e3a87;
+            font-weight: bold;
+        }
+
+        /* Contact info styling */
+        .contact-info {
+            background-color: #2e3a87;
+            padding: 20px;
+            margin-top: 30px;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .contact-info h3 {
+            font-size: 1.5rem;
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+        }
+
+        /* Call Now Popup styling */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+            border-radius: 8px;
+            animation: modalFadeIn 1s ease-in-out;
+        }
+
+        .close {
+            color: #aaa;
+            font-size: 28px;
+            font-weight: bold;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .call-button {
+            background-color: #2e3a87;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(1.1);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes modalFadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .call{
+            padding:15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+       Royal™ Caribbean Helpline®
+    </header>
+
+    <div class="hero-image"></div>
+
+    <div class="content-container">
+        <h2>Welcome to theRoyal™ Caribbean Helpline®</h2>
+        <p>At <span class="highlight">Royal Caribbean</span>, we believe in offering exceptional service and making your cruise experience unforgettable. Our helpline is available 24/7 to assist with any inquiries, bookings, or concerns you might have during your journey with us.</p>
+        <p>Whether you're planning your dream vacation or already on board, our team is here to provide you with the support you need. From booking the perfect cruise to resolving any issues you encounter, we're here to ensure your experience is as smooth as possible.</p>
+        <p>If you have any questions about destinations, itineraries, pricing, or other services, feel free to get in touch with our dedicated customer support team.</p>
+
+        <h2>Why Choose Royal Caribbean?</h2>
+        <p>Royal Caribbean offers a unique cruising experience with world-class amenities, exciting shore excursions, and award-winning entertainment. Our modern ships provide all the luxury you need, including <span class="highlight">fine dining</span>, relaxing spas, and thrilling activities for guests of all ages. Whether you're traveling solo, with family, or with friends, we ensure your time on board is truly unforgettable.</p>
+
+        <p>Our helpline representatives are experts in assisting you with:</p>
+        <ul>
+            <li>Booking inquiries</li>
+            <li>Itinerary modifications</li>
+            <li>Cruise cancellations or rebooking</li>
+            <li>Special requests and accessibility assistance</li>
+            <li>Technical support for our mobile apps and websites</li>
+        </ul>
+
+        <h2>How to Reach Us</h2>
+        <p>Our helpline is available through various channels for your convenience. You can reach us via:</p>
+        <ul>
+            <li><span class="highlight">Phone:</span> 1-800-XYZ-HELP</li>
+            <li><span class="highlight">Email:</span> help@royalcaribbean.com</li>
+            <li><span class="highlight">Live Chat:</span> Available on our website</li>
+        </ul>
+
+        <p>Our team is ready to assist you and ensure your experience with Royal Caribbean is flawless!</p>
+    </div>
+
+    <div class="contact-info">
+        <h3>Contact Us Today!</h3>
+        <p>Our dedicated team is ready to help. Reach out to us now and let us make your cruise experience as seamless and enjoyable as possible.</p>
+    </div>
+
+    <!-- Modal for "Call Now" -->
+    <div id="callModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Need Help? Call Us Now!</h2>
+            <p>We're here to assist you.</p>
+            <div class=call>
+            <a href="tel:+1-888-230-8925" class="call-button">Call Now</a></div>
+        </div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('callModal');
+
+        // Get the close button
+        var closeModal = document.getElementById('closeModal');
+
+        // Show the modal on page load
+        window.onload = function() {
+            modal.style.display = 'block';
+        }
+
+        // When the user clicks on the close button, close the modal
+        closeModal.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        // When the user clicks anywhere outside the modal, close it
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
